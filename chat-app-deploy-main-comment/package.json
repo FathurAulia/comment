@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "install": "cd public && yarn && cd ../server && yarn",
+    "start": "node server/index.js",
+    "public": "yarn start --prefix public",
+    "dev": "concurrently \"cd server && yarn start\" \"cd public && yarn start\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
